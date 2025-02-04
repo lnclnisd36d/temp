@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="">
 <head>
 
     <link href="lawyer-website-template/img/be62e67be012da3f3f058fcddcb08c92.jpg" rel="icon">
@@ -61,30 +61,15 @@
             border: 1px solid #ddd;
         }
     </style>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var faqs = document.querySelectorAll('.faq h3');
-            faqs.forEach(function(faq) {
-                faq.addEventListener('click', function() {
-                    var answer = faq.nextElementSibling;
-                    if (answer.style.display === 'block') {
-                        answer.style.display = 'none';
-                    } else {
-                        answer.style.display = 'block';
-                    }
-                });
-            });
-        });
-    </script>
 </head>
 <body>
     <header>
         <div class="container">
             <h1>Legal FAQs</h1>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </header>
