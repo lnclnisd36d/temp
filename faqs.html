@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link href="lawyer-website-template/img/be62e67be012da3f3f058fcddcb08c92.jpg" rel="icon">
+  <link rel="stylesheet" href="lawyer-website-template/css/bootstrap.min.css">
+    <title>FAQs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #d8870b 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        .faq-section {
+            background: #fff;
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 5px;
+        }
+        .faq {
+            margin-bottom: 20px;
+        }
+        .faq h3 {
+            margin: 0;
+            padding: 10px;
+            background: #d8870b;
+            color: #fff;
+            cursor: pointer;
+        }
+        .faq p {
+            display: none;
+            padding: 10px;
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var faqs = document.querySelectorAll('.faq h3');
+            faqs.forEach(function(faq) {
+                faq.addEventListener('click', function() {
+                    var answer = faq.nextElementSibling;
+                    if (answer.style.display === 'block') {
+                        answer.style.display = 'none';
+                    } else {
+                        answer.style.display = 'block';
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Legal FAQs</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div class="faq-section">
+            <div class="faq">
+                <h3>What is a legal contract?</h3>
+                <p>A legal contract is a binding agreement between two or more parties that is enforceable by law. It typically outlines the terms and conditions of the agreement, including the rights and responsibilities of each party.</p>
+            </div>
+            <div class="faq">
+                <h3>What should I do if I receive a legal notice?</h3>
+                <p>If you receive a legal notice, it is important to read it carefully and understand its contents. You may want to seek legal advice to understand your rights and responsibilities. Respond to the notice within the specified time frame to avoid any legal consequences.</p>
+            </div>
+            <div class="faq">
+                <h3>How can I protect my intellectual property?</h3>
+                <p>To protect your intellectual property, you can apply for patents, trademarks, or copyrights, depending on the type of intellectual property you have. It is also important to enforce your rights by taking legal action against any infringement.</p>
+            </div>
+            <div class="faq">
+                <h3>What is the difference between civil and criminal law?</h3>
+                <p>Civil law deals with disputes between individuals or organizations, usually involving compensation. Criminal law deals with offenses against the state, including crimes such as theft, assault, and murder, and usually involves penalties such as fines or imprisonment.</p>
+            </div>
+            <div class="faq">
+                <h3>What is a power of attorney?</h3>
+                <p>A power of attorney is a legal document that gives one person (the agent or attorney-in-fact) the authority to act on behalf of another person (the principal) in legal or financial matters. The powers granted can be broad or limited to specific tasks.</p>
+            </div>
+            <div class="faq">
+                <h3>What should I do if I get sued?</h3>
+                <p>If you get sued, it is important to respond to the lawsuit within the specified time frame. You should consult with a lawyer to understand the claims against you and to prepare your defense. Ignoring the lawsuit can result in a default judgment against you.</p>
+            </div>
+            <div class="faq">
+                <h3>What are the steps to filing for bankruptcy?</h3>
+                <p>Filing for bankruptcy involves several steps, including: (1) consulting with a bankruptcy attorney, (2) gathering your financial information, (3) filing a bankruptcy petition with the court, (4) attending credit counseling, (5) attending a meeting of creditors, and (6) completing a financial management course.</p>
+            </div>
+            <div class="faq">
+                <h3>What is the statute of limitations?</h3>
+                <p>The statute of limitations is a law that sets the maximum time period within which legal proceedings must be initiated. Once the statute of limitations expires, the claim is no longer valid. The time period varies depending on the type of legal matter and jurisdiction.</p>
+            </div>
+            <div class="faq">
+                <h3>What is mediation?</h3>
+                <p>Mediation is a form of alternative dispute resolution where a neutral third party (the mediator) helps the disputing parties reach a mutually acceptable agreement. Mediation is often less formal, less expensive, and quicker than going to court.</p>
+            </div>
+            <div class="faq">
+                <h3>What are my rights as a tenant?</h3>
+                <p>As a tenant, your rights may include the right to a safe and habitable living environment, the right to privacy, the right to receive notice before rent increases or eviction, and the right to request repairs. Tenant rights vary by jurisdiction, so it is important to check local laws.</p>
+            </div>
+        </div>
+    </div>
+
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lawyer-website-template/lib/easing/easing.min.js"></script>
+    <script src="lawyer-website-template/lib/waypoints/waypoints.min.js"></script>
+    <script src="lawyer-website-template/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lawyer-website-template/lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lawyer-website-template/lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lawyer-website-template/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="lawyer-website-template/mail/jqBootstrapValidation.min.js"></script>
+    <script src="lawyer-website-template/mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="lawyer-website-template/js/main.js"></script>
+    <script src="lawyer-website-template/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
